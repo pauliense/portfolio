@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "The Middleman" %></title>
+    <title><%= "Paulien Sewuster: journalist & web developer" %></title>
 
     <%= stylesheet_link_tag "all" %>
     <%= javascript_include_tag  "all" %>
@@ -25,9 +25,26 @@
   </head>
 
   <body class="<%= page_classes %>">
-    <%= partial "navbar" %>   <!-- call _navbar.html.erb partial -->
-    <%= yield %>              <!-- Page content is injected here -->
-    <%= partial "footer" %>   <!-- call _footer.html.erb partial -->
+    <%#= partial "navbar" %>   <!-- call _navbar.html.erb partial -->
+
+
+<nav>
+
+
+<div id="sidebar">
+  <%= partial "sidebar" %></div>
+
+</nav>
+
+<div id="content">
+ <%= yield %></div>
+    <footer>              <!-- Page content is injected here -->
+    <%= partial "footer" %>   <!-- call _footer.html.erb partial --> </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="javascript/tabs.js"></script>
+
+
 
   </body>
 </html>

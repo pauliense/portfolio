@@ -1,4 +1,28 @@
-.footer-container {background-color: grey;
-color: yellow;
-height: 400px;
-width: 100%; }
+.footer-container {
+background-color: $purple;
+height: 40px;
+width: 100%;
+opacity: 0.8;
+}
+
+.footer-container h4 {
+  font-family: $header-medium-font;
+  color: white;
+}
+
+
+.footer-fixed {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  margin-top: 20px;
+  z-index: 1;
+  width: 100%;
+}
+
+.footer-container a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  padding-bottom: 10px;
+}

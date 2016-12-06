@@ -1,0 +1,84 @@
+.extra-extra-wrapper {
+  margin: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+
+}
+
+.tabs {
+  display: flex;
+}
+.tabs a {
+  color: #F0D6FF;
+}
+.tabs a:hover {
+  cursor: pointer;
+  text-decoration: none;
+/*  opacity: 0.8;
+*/}
+.tabs h3 {
+  font-size: 27px;
+  font-weight: bold;
+  margin: 0;
+  font-family: $header-font;
+}
+
+
+
+.card-tab {
+  background: $light-purple;
+  opacity: 0.8;
+  padding-top: 50px;
+  padding: 50px;
+  border-radius: 0 0 10px 10px;
+  font-family: $header-medium-font;
+
+}
+
+.tab {
+  background: #573c7c;
+// /*  background: #F0D6FF;
+opacity: 0.8;
+  flex: 1 1 auto;
+  text-align: center;
+  padding: 20px 0;
+}
+
+
+
+.tab p {
+  opacity: 1;
+}
+
+.tab:first-child {
+  border-radius: 10px 0 0 0;
+
+}
+.tab:last-child {
+  border-radius: 0 10px 0 0;
+
+}
+.tab.active {
+  background: #A187C4;
+  color: black;
+  opacity: 1;
+
+}
+// .tab-content {
+//   padding-top: 50px;
+//   padding: 50px;
+// }
+.tab-content p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+      font-family: $header-medium-font;
+
+}
+
+
+
+.tab-content h1, h2, h3, h4, h5 {
+  font-family: $header-medium-font;
+
+}
