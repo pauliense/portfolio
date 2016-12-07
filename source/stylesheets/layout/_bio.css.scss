@@ -1,5 +1,16 @@
 .bio-card {
   margin: auto;
+  margin-right: 200px;
+  margin-left: 200px;
   padding: 50px;
   font-family: $base-font;
+}
+
+
+@media (max-width: 600px) {
+  .bio-card {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0;
+  }
 }

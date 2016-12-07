@@ -1,3 +1,44 @@
+.product {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 3px;
+  transition: all 0.15s ease;
+}
+
+/* Body design */
+.product-body {
+  flex: 1 1 auto;
+}
+
+
+
+.product-body p {
+    text-align: left;
+  }
+
+/* Upvote design */
+.product-upvote {
+  padding-right: 20px;
+  text-align: left;
+  transition: all 0.15s ease;
+}
+.product-count {
+  margin: 2px 0 0;
+}
+.product-arrow {
+  transition: all 0.15s ease;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid transparent;
+  border-bottom: 9px solid black;
+  border-radius: 2px;
+  margin: auto;
+}
+
+
 .extra-extra-wrapper {
   margin: auto;
   padding-left: 50px;
@@ -13,6 +54,10 @@
   }
 }
 
+
+.cv-list {
+  text-align: left;
+}
 
 .tabs {
   display: flex;
@@ -40,6 +85,18 @@
   padding: 10px;
   font-family: $base-font;
 }
+
+
+.card-tab a {
+  color: $medium-purple;
+}
+
+.card-tab a:hover {
+  text-decoration: none;
+}
+
+
+
 
 .card-tab p {
   text-align: right;
