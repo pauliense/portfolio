@@ -2,7 +2,16 @@ $(function(){
 
   $(".tab").on("click", function(e){
     // Change active tab
+if ( $(this).hasClass("active") )
+{
 
+  $(this).removeClass("active")
+
+
+  $(".tab-content").addClass("hidden") }
+
+
+else {
 
     // remove active class...
     $(".tab").removeClass("active")
@@ -19,12 +28,11 @@ $(function(){
 
     $(target).removeClass("hidden");
 
-
+}
 
     // $(this)
 
     // Show target tab-content (use class="hidden")
   });
-
 });
 

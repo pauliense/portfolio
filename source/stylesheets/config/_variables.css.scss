@@ -5,8 +5,8 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto|Roboto+Slab');
 
-$header-medium-font:  "Roboto Slab", "serif";
-$base-font: "Roboto", "sans-serif";
+// $header-medium-font:  "Roboto Slab", "serif";
+$base-font: "Roboto Slab", "serif";
 $header-font: 'Permanent Marker', 'cursive';
 
 // Local fonts (uncomment following lines)
@@ -20,7 +20,7 @@ $header-font: 'Permanent Marker', 'cursive';
 // $my-font: "Font Name";
 
 // Font-size and line-height
-$base-size: 16px;
+$base-size: 18px;
 $base-height: 1.4;
 
 /* -------------------------------------
@@ -36,6 +36,9 @@ $orange: #E67E22;
 $green: #32B796;
 $purple: #573c7c;
 $light-purple: #F0D6FF;
+$black: #2f2f2f;
+$white: white;
+$medium-purple: #A187C4;
 
 // Gray scale
 $gray-darker:  lighten(#000, 13.5%); // #222

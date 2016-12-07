@@ -25,21 +25,12 @@
   </head>
 
   <body class="<%= page_classes %>">
-    <%#= partial "navbar" %>   <!-- call _navbar.html.erb partial -->
 
+  <%= yield %>
 
-<nav>
-
-
-<div id="sidebar">
-  <%= partial "sidebar" %></div>
-
-</nav>
-
-<div id="content">
- <%= yield %></div>
-    <footer>              <!-- Page content is injected here -->
-    <%= partial "footer" %>   <!-- call _footer.html.erb partial --> </footer>
+  <footer>              <!-- Page content is injected here -->
+    <%= partial "footer" %>   <!-- call _footer.html.erb partial -->
+  </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="javascript/tabs.js"></script>
