@@ -1,14 +1,46 @@
+
+.try {
+  color: $light-purple;
+  text-shadow: 1px 2px 3px rgba($black, 1);
+}
+
+
+.card-tab h2 {
+  font-family: $header-font;
+}
+
+.carousel-caption h3 {
+  font-family: $header-font;
+}
+
+.carousel-indicators .active {
+  background-color: $medium-purple;
+}
+
+.carousel-indicators li {
+  border: 1px solid $medium-purple;
+}
+
+
+
+.carousel-container {
+  max-width: 600px;
+  max-height: 468px;
+  margin: auto;
+}
+
 .product {
   display: flex;
   align-items: center;
   padding: 20px;
-  border-radius: 3px;
+  border-bottom: 2px solid $medium-purple;
   transition: all 0.15s ease;
 }
 
 /* Body design */
 .product-body {
   flex: 1 1 auto;
+  padding-left: 50px;
 }
 
 
@@ -22,6 +54,7 @@
   padding-right: 20px;
   text-align: left;
   transition: all 0.15s ease;
+  width: 120px;
 }
 .product-count {
   margin: 2px 0 0;
@@ -47,16 +80,14 @@
 
 
 
+
+
+
 @media (max-width: 600px) {
   .extra-extra-wrapper {
     padding-left: 5%;
     padding-right: 5%;
   }
-}
-
-
-.cv-list {
-  text-align: left;
 }
 
 .tabs {
@@ -80,8 +111,8 @@
 }
 
 .card-tab {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   padding: 10px;
   font-family: $base-font;
 }
@@ -92,15 +123,16 @@
 }
 
 .card-tab a:hover {
+  color: rgba($purple, .8);
   text-decoration: none;
 }
 
 
 
 
-.card-tab p {
-  text-align: right;
-}
+// .card-tab p {
+//   text-align: right;
+// }
 
 
 .tab {
@@ -111,26 +143,26 @@
   border-bottom: 2px solid rgba($medium-purple, 1);
 }
 
-#last_row {
-    .tab {
-  background: $purple;
-  opacity: 0.8;
-  flex: 1 1 auto;
-  text-align: center;
-  padding: 20px 0;
-  border-bottom: 0px;
-  }
+// #last_row {
+//     .tab {
+//   background: $purple;
+//   opacity: 0.8;
+//   flex: 1 1 auto;
+//   text-align: center;
+//   padding: 20px 0;
+//   border-bottom: 0px;
+//   }
 
-  .tab.active {
-    background: $medium-purple;
-    color: $black;
-    opacity: 1;
-  }
+//   .tab.active {
+//     background: $medium-purple;
+//     color: $black;
+//     opacity: 1;
+//   }
 
-  .card-tab {
-    border-bottom: 4px solid $medium-purple;
-  }
-}
+//   .card-tab {
+//     border-bottom: 4px solid $medium-purple;
+//   }
+// }
 
 .tab p {
   opacity: 1;
@@ -142,12 +174,11 @@
   opacity: 1;
 }
 
-.tab-content p {
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
-  font-family: $base-font;
-}
+// .tab-content p {
+//   font-size: 20px;
+//   font-weight: bold;
+//   font-family: $base-font;
+// }
 
 .tab-content h1, h2, h3, h4, h5 {
   font-family: $base-font;
